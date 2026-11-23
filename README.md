@@ -195,10 +195,7 @@ plt.show()
 
 ## Output 5
 
-```
-<img width="686" height="547" alt="image" src="https://github.com/user-attachments/assets/6cbd9dad-8d2e-45b5-8b96-df41b6d56b4e" />
-
-```
+<img width="686" height="547" alt="image" src="https://github.com/user-attachments/assets/7c569145-3203-4b20-b86c-86ed93a360fc" />
 
 ## Input 6
 
