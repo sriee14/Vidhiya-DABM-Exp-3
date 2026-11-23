@@ -60,23 +60,15 @@ A sample business dataset representing the relationship between Advertising Expe
 
 
 ## Program & Output
-
+## Input
 ```
 
-# REGRESSION TECHNIQUES IN BUSINESS DATA
-# (Simple Linear Regression)
-
-# Step 1: Import Required Libraries
+# Step 1: Import the python liabries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-
-```
-
-## Input 1
-
-```
+import seaborn as sns
 
 # Step 2: Create Dataset
 data = {
@@ -90,6 +82,7 @@ df = pd.DataFrame(data)
 print("----- Dataset -----")
 print(df)
 ```
+
 ## Output 1
 
 ```
@@ -127,21 +120,6 @@ model.fit(X, Y)
 print("\nIntercept (a):", model.intercept_)
 print("Slope (b):", model.coef_[0])
 
-```
-
-## Output 2
-
-```
-
-Intercept (a): 0.5811563169164877
-Slope (b): 0.7794432548179872
-
-```
-
-## Input 3
-
-```
-
 # Regression Equation
 print("\nRegression Equation: Y = {:.2f} + {:.2f}X".format(
     model.intercept_, model.coef_[0]
@@ -149,15 +127,17 @@ print("\nRegression Equation: Y = {:.2f} + {:.2f}X".format(
 
 ```
 
-## Output 3
+## Output 2
 
 ```
+Intercept (a): 0.5811563169164877
+Slope (b): 0.7794432548179872
 
 Regression Equation: Y = 0.58 + 0.78X
 
 ```
 
-## Input 4
+## Input 3
 
 ```
 
@@ -166,10 +146,9 @@ Y_pred = model.predict(X)
 
 print("\nPredicted Sales Values:")
 print(Y_pred)
-
 ```
 
-## Output 4
+## Output 3
 
 ```
 
@@ -179,7 +158,7 @@ Predicted Sales Values:
 
 ```
 
-## Input 5
+## Input 4
 
 ```
 
@@ -188,19 +167,17 @@ r2 = model.score(X, Y)
 
 print("\nModel Performance:")
 print("R2 Score = {:.4f}".format(r2))
-
 ```
 
-## Output 5
+## Output 4
 
 ```
 
 Model Performance:
 R2 Score = 0.9736
-
 ```
 
-## Input 6
+## Input 5
 
 ```
 
@@ -218,13 +195,17 @@ plt.show()
 
 ```
 
-## Output 6
-
-<img width="686" height="547" alt="image" src="https://github.com/user-attachments/assets/6cbd9dad-8d2e-45b5-8b96-df41b6d56b4e" />
-
-## Input 7
+## Output 5
 
 ```
+<img width="686" height="547" alt="image" src="https://github.com/user-attachments/assets/6cbd9dad-8d2e-45b5-8b96-df41b6d56b4e" />
+
+```
+
+## Input 6
+
+```
+
 # Step 9: Example Prediction
 new_value = np.array([[45]])
 predicted_sales = model.predict(new_value)
@@ -232,18 +213,12 @@ predicted_sales = model.predict(new_value)
 print("\nPredicted Sales for Advertising ₹45 Lakhs = {:.2f} Crores".format(
     predicted_sales[0]
 ))
-
 ```
 
-## Output 7
-
+## Output 6
 ```
-
 Predicted Sales for Advertising ₹45 Lakhs = 35.66 Crores
-
 ```
-
-
 ## Result
 
 
